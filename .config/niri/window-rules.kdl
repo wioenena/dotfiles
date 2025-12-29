@@ -1,0 +1,32 @@
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id="^zen-beta$" title="^Picture-in-Picture$"
+    open-floating true
+    default-column-width { fixed 480; }
+    default-window-height { fixed 270; }
+}
+
+window-rule {
+    match app-id="^(zen-beta|Alacritty|dev.zed.Zed|Code)$"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="^protonvpn-app$"
+    min-height 560
+    max-height 560
+    open-floating true
+}
+
+window-rule {
+    match app-id="^me.proton.Pass$"
+    min-width  1243
+    max-width 1243
+    min-height 787
+    max-height 787
+    open-floating true
+}

@@ -1,3 +1,5 @@
+include "window-rules.kdl"
+include "layer-rules.kdl"
 prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
@@ -14,17 +16,8 @@ input {
     }
 
     touchpad {
-        // off
         tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
         natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
     }
 
     mouse {
@@ -86,8 +79,8 @@ layout {
 }
 
 environment {
-    QT_QPA_PLATFORM "wayland"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    // QT_QPA_PLATFORM "wayland"
+    // ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
 cursor {
@@ -108,7 +101,6 @@ hotkey-overlay {
 config-notification {
     disable-failed
 }
-
 
 animations {
     on
@@ -131,10 +123,10 @@ recent-windows {
     }
 
     binds {
-        Mod+Tab         { next-window; }
-        Mod+Shift+Tab   { previous-window; }
-        Mod+grave       { next-window     filter="app-id"; }
-        Mod+Shift+grave { previous-window filter="app-id"; }
+        Alt+Tab         { next-window; }
+        Alt+Shift+Tab   { previous-window; }
+        Alt+grave       { next-window     filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
     }
 }
 
@@ -279,9 +271,4 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     Mod+Shift+P { power-off-monitors; }
-}
-
-window-rule {
-    geometry-corner-radius 4
-    clip-to-geometry true
 }

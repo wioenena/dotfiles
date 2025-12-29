@@ -1,0 +1,9 @@
+// -*- mode: jsonc -*-
+{
+  "height": 30,
+  "spacing": 4,
+  "modules-left": ["niri/workspaces"],
+  "niri/workspaces": {
+    "format": "{value}",
+  },
+}
