@@ -1,4 +1,11 @@
 {
+  "agent": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-3-pro-preview"
+    },
+    "model_parameters": []
+  },
   "auto_install_extensions": {
     "aquarium-theme": true,
     "biome": true,
