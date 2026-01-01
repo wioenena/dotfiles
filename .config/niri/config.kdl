@@ -1,14 +1,21 @@
 include "window-rules.kdl"
 include "layer-rules.kdl"
+include "dms/colors.kdl"
+include "dms/wpblur.kdl"
+include "dms/keybindings.kdl"
+
 prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+spawn-at-startup "dms" "run"
+spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 
 input {
     keyboard {
         xkb {
             layout "us,tr"
-            options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            options "compose:ralt,ctrl:nocaps"
         }
         repeat-delay 300
         repeat-rate 25
@@ -40,8 +47,8 @@ output "HDMI-A-1" {
 }
 
 layout {
-    gaps 8
-
+    gaps 5
+    background-color "transparent"
     center-focused-column "never"
     default-column-display "normal"
 
@@ -59,9 +66,9 @@ layout {
     border {
         on
         width 2
-        active-color "#ffc87f"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
+        // active-color "#ffc87f"
+        // inactive-color "#505050"
+        // urgent-color "#9b0000"
     }
 
     shadow {
@@ -79,8 +86,11 @@ layout {
 }
 
 environment {
+    XDG_CURRENT_DESKTOP "niri"
     QT_QPA_PLATFORM "wayland"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME_QT6 "gtk3"
 }
 
 cursor {
@@ -135,7 +145,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+D repeat=false hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
-    Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; } // TODO: change super to Mod
+    // Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; } // TODO: change super to Mod
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
