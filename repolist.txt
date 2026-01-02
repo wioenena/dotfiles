@@ -1,0 +1,17 @@
+repo id                                           repo name
+adoptium-temurin-java-repository                  Adoptium
+brave-browser                                     Brave Browser
+code                                              Visual Studio Code
+copr:copr.fedorainfracloud.org:ilyaz:LACT         Copr repo for LACT owned by ilyaz
+copr:copr.fedorainfracloud.org:sneexy:zen-browser Copr repo for zen-browser owned by sneexy
+fedora                                            Fedora 43 - x86_64
+fedora-cisco-openh264                             Fedora 43 openh264 (From Cisco) - x86_64
+google-chrome                                     google-chrome
+rpmfusion-free                                    RPM Fusion for Fedora 43 - Free
+rpmfusion-free-updates                            RPM Fusion for Fedora 43 - Free - Updates
+rpmfusion-nonfree                                 RPM Fusion for Fedora 43 - Nonfree
+rpmfusion-nonfree-nvidia-driver                   RPM Fusion for Fedora 43 - Nonfree - NVIDIA Driver
+rpmfusion-nonfree-steam                           RPM Fusion for Fedora 43 - Nonfree - Steam
+rpmfusion-nonfree-updates                         RPM Fusion for Fedora 43 - Nonfree - Updates
+terra                                             Terra 43
+updates                                           Fedora 43 - x86_64 - Updates
