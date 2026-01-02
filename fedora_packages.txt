@@ -8,7 +8,6 @@ adoptium-temurin-java-repository
 java-21-openjdk
 java-25-openjdk
 java-latest-openjdk
-gnome-shell-extension-appindicator
 yaak
 direnv
 gamemode
@@ -94,12 +93,20 @@ neovim
 code
 zed
 gnome-console
-gnome-shell-extension-dash-to-dock
 libvirt
 virt-manager
 gnome-boxes
 openssh
 openssl
 gnome-extensions-app
-gnome-shell-extension-caffeine gnome-shell-extension-gsconnect
 zen-browser
+gnome-shell-extension-common-49.0-2.fc43.noarch
+gnome-shell-extension-apps-menu-49.0-2.fc43.noarch
+gnome-shell-extension-launch-new-instance-49.0-2.fc43.noarch
+gnome-shell-extension-places-menu-49.0-2.fc43.noarch
+gnome-shell-extension-window-list-49.0-2.fc43.noarch
+gnome-shell-extension-background-logo-49.0-2.fc43.noarch
+gnome-shell-extension-gsconnect-67-1.fc43.x86_64
+gnome-shell-extension-caffeine-58-1.fc43.noarch
+gnome-shell-extension-dash-to-dock-102-1.fc43.noarch
+gnome-shell-extension-appindicator-61-1.fc43.noarch
