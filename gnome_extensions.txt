@@ -1,0 +1,10 @@
+clipboard-indicator@tudmotu.com
+lockkeys@vaina.lt
+gtk4-ding@smedius.gitlab.com
+apps-menu@gnome-shell-extensions.gcampax.github.com
+places-menu@gnome-shell-extensions.gcampax.github.com
+gsconnect@andyholmes.github.io
+caffeine@patapon.info
+dash-to-dock@micxgx.gmail.com
+appindicatorsupport@rgcjonas.gmail.com
+add-to-desktop@tommimon.github.com
