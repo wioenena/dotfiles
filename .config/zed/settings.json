@@ -31,7 +31,8 @@
     "vscode-dark-modern": true,
     "vue": true,
     "zig": true,
-		"qml": true
+		"qml": true,
+		"java": true
   },
   "autosave": {
     "after_delay": {
