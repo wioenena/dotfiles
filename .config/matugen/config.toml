@@ -15,7 +15,6 @@ arguments = ["img", "--transition-type", "center", "{{ image }}"]
 [templates.hyprland]
 input_path = "./templates/hyprland-colors.conf"
 output_path = "~/.config/hypr/colors.conf"
-post_hook = "hyprctl reload"
 
 [templates.btop]
 input_path = "./templates/btop.theme"
@@ -32,4 +31,7 @@ output_path = "~/.config/tmux/tmux.conf"
 [templates.cava]
 input_path = "./templates/cava-colors.ini"
 output_path = "~/.config/cava/themes/matugen"
-post_hook = "pkill -USR1 cava"
+
+[templates.waybar]
+input_path = "./templates/colors.css"
+output_path = "~/.config/waybar/colors.css"
