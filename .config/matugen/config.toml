@@ -1,0 +1,35 @@
+[config]
+version_check = false
+fallback_color = "#ffbf9b"
+caching = false
+expr_prefix = "{{"
+expr_postfix = "}}"
+block_prefix = "<*"
+block_postfix = "*>"
+
+[config.wallpaper]
+set = true
+command = "awww"
+arguments = ["img", "--transition-type", "center", "{{ image }}"]
+
+[templates.hyprland]
+input_path = "./templates/hyprland-colors.conf"
+output_path = "~/.config/hypr/colors.conf"
+post_hook = "hyprctl reload"
+
+[templates.btop]
+input_path = "./templates/btop.theme"
+output_path = "~/.config/btop/themes/matugen.theme"
+
+[templates.alacritty]
+input_path = "./templates/alacritty.toml"
+output_path = "~/.config/alacritty/colors.toml"
+
+[templates.tmux]
+input_path = "./templates/tmux-colors.conf"
+output_path = "~/.config/tmux/tmux.conf"
+
+[templates.cava]
+input_path = "./templates/cava-colors.ini"
+output_path = "~/.config/cava/themes/matugen"
+post_hook = "pkill -USR1 cava"
