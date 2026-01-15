@@ -1,0 +1,12 @@
+{
+  "include": ["./base.jsonc", "./module-configs.jsonc"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "hyprland/language",
+    "network",
+    "clock",
+  ],
+}
