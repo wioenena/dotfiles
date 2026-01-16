@@ -15,6 +15,7 @@ arguments = ["img", "--transition-type", "center"]
 [templates.hyprland]
 input_path = "./templates/hyprland-colors.conf"
 output_path = "~/.config/hypr/colors.conf"
+post_hook = "hyprctl reload"
 
 [templates.btop]
 input_path = "./templates/btop.theme"
