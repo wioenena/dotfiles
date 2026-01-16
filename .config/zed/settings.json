@@ -38,6 +38,7 @@
   "buffer_font_weight": 600.0,
   "icon_theme": "Symbols Icon Theme",
   "inlay_hints": {
+    "show_background": false,
     "enabled": true,
   },
   "tab_bar": {
