@@ -52,9 +52,22 @@
   },
   "theme": "VSCode Dark Modern",
   "ui_font_family": ".ZedSans",
-  "ui_font_size": 18.0,
+  "ui_font_size": 16.0,
   "vim_mode": true,
   "file_types": {
-    "Hyprland Config": ["hyprland.conf"],
+    "Hyprland Config": [
+      "hyprland.conf"
+    ],
   },
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "languages": {
+    "TOML": {
+      "formatter": {
+        "language_server": {
+          "name": "tombi"
+        }
+      }
+    }
+  }
 }
