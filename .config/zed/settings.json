@@ -1,4 +1,7 @@
 {
+  "git_panel": {
+    "tree_view": true
+  },
   "auto_install_extensions": {
     "aquarium-theme": true,
     "biome": true,
