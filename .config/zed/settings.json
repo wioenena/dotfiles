@@ -30,6 +30,8 @@
     "qml": true,
     "java": true,
     "hyprlang": true,
+    "make": true,
+    "neocmake": true
   },
   "autosave": {
     "after_delay": {
