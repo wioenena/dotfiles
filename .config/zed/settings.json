@@ -41,6 +41,9 @@
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 16,
   "buffer_font_weight": 600.0,
+  "buffer_font_features": {
+    "calt": true
+  },
   "icon_theme": "Symbols Icon Theme",
   "inlay_hints": {
     "enabled": true,
@@ -59,7 +62,10 @@
   "ui_font_family": "Segoe UI",
   "ui_font_size": 16.0,
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font"
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_features": {
+      "calt": true
+    }
   },
   "vim_mode": true,
   "file_types": {
