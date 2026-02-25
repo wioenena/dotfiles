@@ -59,7 +59,7 @@
     "show_diagnostics": "all",
   },
   "theme": "VSCode Dark Modern",
-  "ui_font_family": "Segoe UI",
+  "ui_font_family": "Inter",
   "ui_font_size": 16.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
