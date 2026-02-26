@@ -58,7 +58,7 @@
     "show_close_button": "hidden",
     "show_diagnostics": "all",
   },
-  "theme": "VSCode Dark Modern",
+  "theme": "Tokyo Night",
   "ui_font_family": "Inter",
   "ui_font_size": 16.0,
   "terminal": {
