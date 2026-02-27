@@ -42,7 +42,7 @@
   "buffer_font_size": 16,
   "buffer_font_weight": 600.0,
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "icon_theme": "Symbols Icon Theme",
   "inlay_hints": {
@@ -58,7 +58,7 @@
     "show_close_button": "hidden",
     "show_diagnostics": "all",
   },
-  "theme": "Aquarium",
+  "theme": "Ayu Dark",
   "ui_font_family": "Inter",
   "ui_font_size": 16.0,
   "terminal": {
