@@ -1,4 +1,83 @@
 {
+  "ssh_connections": [
+    {
+      "host": "82.25.42.239",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/root/meshur-co-backend"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "77.90.53.10",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/root"
+          ]
+        },
+        {
+          "paths": [
+            "/root/meshur-co-backend"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "77.90.53.10",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/root/meshur.co/./"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "77.90.53.10",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/root/meshur.co/./"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "77.90.53.10",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/root/meshur-co-backend"
+          ]
+        }
+      ]
+    }
+  ],
+  "agent_servers": {
+    
+  },
+  "agent": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-3.1-pro-preview",
+      "enable_thinking": true
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "git_panel": {
     "tree_view": true
   },
@@ -31,7 +110,8 @@
     "java": true,
     "hyprlang": true,
     "make": true,
-    "neocmake": true
+    "neocmake": true,
+    "csharp": true
   },
   "autosave": {
     "after_delay": {
@@ -46,7 +126,7 @@
   },
   "icon_theme": "Symbols Icon Theme",
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
@@ -59,7 +139,6 @@
     "show_diagnostics": "all",
   },
   "theme": "Ayu Dark",
-  "ui_font_family": "Inter",
   "ui_font_size": 16.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
@@ -67,7 +146,7 @@
       "calt": true
     }
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "file_types": {
     "Hyprland Config": [
       "hyprland.conf"
