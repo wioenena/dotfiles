@@ -1,83 +1,4 @@
 {
-  "ssh_connections": [
-    {
-      "host": "82.25.42.239",
-      "username": "root",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/root/meshur-co-backend"
-          ]
-        }
-      ]
-    },
-    {
-      "host": "77.90.53.10",
-      "username": "root",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/root"
-          ]
-        },
-        {
-          "paths": [
-            "/root/meshur-co-backend"
-          ]
-        }
-      ]
-    },
-    {
-      "host": "77.90.53.10",
-      "username": "root",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/root/meshur.co/./"
-          ]
-        }
-      ]
-    },
-    {
-      "host": "77.90.53.10",
-      "username": "root",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/root/meshur.co/./"
-          ]
-        }
-      ]
-    },
-    {
-      "host": "77.90.53.10",
-      "username": "root",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/root/meshur-co-backend"
-          ]
-        }
-      ]
-    }
-  ],
-  "agent_servers": {
-    
-  },
-  "agent": {
-    "default_model": {
-      "provider": "google",
-      "model": "gemini-3.1-pro-preview",
-      "enable_thinking": true
-    },
-    "favorite_models": [],
-    "model_parameters": []
-  },
   "git_panel": {
     "tree_view": true
   },
@@ -111,7 +32,8 @@
     "hyprlang": true,
     "make": true,
     "neocmake": true,
-    "csharp": true
+    "csharp": true,
+    "sql": true
   },
   "autosave": {
     "after_delay": {
