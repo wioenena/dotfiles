@@ -68,7 +68,7 @@
       "calt": true
     }
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "file_types": {
     "Hyprland Config": [
       "hyprland.conf"
