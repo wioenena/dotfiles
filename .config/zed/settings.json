@@ -33,7 +33,8 @@
     "make": true,
     "neocmake": true,
     "csharp": true,
-    "sql": true
+    "sql": true,
+    "gruber-darker": true
   },
   "autosave": {
     "after_delay": {
@@ -60,7 +61,7 @@
     "show_close_button": "hidden",
     "show_diagnostics": "all",
   },
-  "theme": "Ayu Dark",
+  "theme": "Gruber Darker",
   "ui_font_size": 16.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
