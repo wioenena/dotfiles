@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vicinae.com/schemas/config.json",
+  "imports": [],
+  "close_on_focus_loss": false,
+  "consider_preedit": false,
+  "pop_to_root_on_close": true,
+  "pop_on_backspace": true,
+  "activate_on_single_click": false,
+  "escape_key_behavior": "navigate_back",
+  "favicon_service": "twenty",
+  "keybinding": "default",
+  "pixmap_cache_mb": 50,
+  "search_files_in_root": false,
+  "font": {
+    "rendering": "qt",
+    "normal": {
+      "family": "Inter Variable",
+      "size": 12
+    }
+  },
+  "theme": {
+    "light": {
+      "name": "vicinae-light",
+      "icon_theme": "auto"
+    },
+    "dark": {
+      "name": "vicinae-dark",
+      "icon_theme": "auto"
+    }
+  },
+  "telemetry": {
+    "system_info": false
+  },
+  "launcher_window": {
+    "opacity": 0.5,
+    "client_side_decorations": {
+      "enabled": true,
+      "rounding": 10,
+      "border_width": 1
+    },
+    "size": {
+      "width": 770,
+      "height": 480
+    },
+    "dim_around": true,
+    "blur": {
+      "enabled": true
+    },
+    "compact_mode": {
+      "enabled": false
+    },
+    "layer_shell": {
+      "layer": "top",
+      "keyboard_interactivity": "exclusive",
+      "enabled": true
+    }
+  },
+  "keybinds": {
+    "action.copy": "control+shift+C",
+    "action.copy-name": "control+shift+.",
+    "action.copy-path": "control+shift+,",
+    "action.dangerous-remove": "control+shift+X",
+    "action.duplicate": "control+D",
+    "action.edit": "control+E",
+    "action.edit-secondary": "control+shift+E",
+    "action.move-down": "control+shift+ARROWDOWN",
+    "action.move-up": "control+shift+ARROWUP",
+    "action.new": "control+N",
+    "action.open": "control+O",
+    "action.pin": "control+shift+P",
+    "action.refresh": "control+R",
+    "action.remove": "control+X",
+    "action.save": "control+S",
+    "open-search-filter": "control+P",
+    "open-settings": "control+,",
+    "toggle-action-panel": "control+B"
+  },
+  "favorites": [
+    "clipboard:history"
+  ],
+  "fallbacks": [
+    "files:search"
+  ],
+  "providers": {
+    "@sovereign/store.vicinae.awww-switcher": {
+      "preferences": {
+        "wallpaperPath": "~/Pictures/Wallpapers/"
+      }
+    },
+    "applications": {
+      "preferences": {
+        "defaultAction": "launch",
+        "paths": [
+          "/home/wioenena/.local/share/applications",
+          "/home/wioenena/.local/share/flatpak/exports/share/applications",
+          "/var/lib/flatpak/exports/share/applications",
+          "/usr/local/share/applications",
+          "/usr/share/applications"
+        ]
+      }
+    },
+    "clipboard": {
+      "preferences": {
+        "encryption": false,
+        "eraseOnStartup": true,
+        "ignorePasswords": true,
+        "monitoring": true
+      }
+    },
+    "shortcuts": {
+      "entrypoints": {
+        "4c5cdc20-ef5a-44fe-9cc4-2e2afa6b8781": {
+          "alias": "aur"
+        },
+        "5a8306f8-159f-4d5d-996c-21a8aeb39253": {
+          "alias": "arch"
+        },
+        "dbea3d22-7834-4944-a0cc-6ebdcf9895a6": {
+          "alias": "rust"
+        }
+      }
+    }
+  }
+}
