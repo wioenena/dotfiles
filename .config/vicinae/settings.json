@@ -24,7 +24,7 @@
       "icon_theme": "auto"
     },
     "dark": {
-      "name": "vicinae-dark",
+      "name": "tokyo-night",
       "icon_theme": "auto"
     }
   },
@@ -32,7 +32,7 @@
     "system_info": false
   },
   "launcher_window": {
-    "opacity": 0.5,
+    "opacity": 0.85,
     "client_side_decorations": {
       "enabled": true,
       "rounding": 10,
