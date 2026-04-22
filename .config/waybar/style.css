@@ -14,7 +14,7 @@ window#waybar {
     border-radius: 4px;
 }
 
-.module:not(#taskbar) {
+.module {
     background: rgba(0, 0, 0, 1);
 }
 
@@ -22,26 +22,4 @@ window#waybar {
 .modules-center,
 .modules-right {
     padding: 4px;
-}
-
-#taskbar button {
-    padding: 4px;
-    border-radius: 2px;
-    transition: all .3s ease-in-out;
-}
-
-#taskbar button:first-child {
-    margin-right: 4px;
-}
-
-#taskbar button:last-child {
-    margin-left: 4px;
-}
-
-#taskbar button:not(:first-child):not(:last-child) {
-    margin: 0 4px;
-}
-
-#taskbar button.active {
-    border-bottom: 2px solid white;
 }
