@@ -311,26 +311,26 @@
   "matugenTemplateVscode": true,
   "matugenTemplateEmacs": true,
   "matugenTemplateZed": true,
-  "showDock": false,
-  "dockAutoHide": false,
+  "showDock": true,
+  "dockAutoHide": true,
   "dockSmartAutoHide": false,
-  "dockGroupByApp": false,
+  "dockGroupByApp": true,
   "dockOpenOnOverview": false,
   "dockPosition": 1,
   "dockSpacing": 4,
   "dockBottomGap": 0,
   "dockMargin": 0,
   "dockIconSize": 40,
-  "dockIndicatorStyle": "circle",
+  "dockIndicatorStyle": "line",
   "dockBorderEnabled": false,
   "dockBorderColor": "surfaceText",
   "dockBorderOpacity": 1,
   "dockBorderThickness": 1,
   "dockIsolateDisplays": false,
-  "dockLauncherEnabled": false,
-  "dockLauncherLogoMode": "apps",
+  "dockLauncherEnabled": true,
+  "dockLauncherLogoMode": "os",
   "dockLauncherLogoCustomPath": "",
-  "dockLauncherLogoColorOverride": "",
+  "dockLauncherLogoColorOverride": "primary",
   "dockLauncherLogoSizeOffset": 0,
   "dockLauncherLogoBrightness": 0.5,
   "dockLauncherLogoContrast": 1,
@@ -627,36 +627,7 @@
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
   "desktopWidgetGridSettings": {},
-  "desktopWidgetInstances": [
-    {
-      "id": "dw_1776966851918_3qj3o7ds7",
-      "widgetType": "desktopClock",
-      "name": "Desktop Clock",
-      "enabled": true,
-      "config": {
-        "style": "analog",
-        "transparency": 0.8,
-        "colorMode": "primary",
-        "customColor": "#ffffff",
-        "showDate": true,
-        "showAnalogNumbers": true,
-        "showAnalogSeconds": true,
-        "displayPreferences": [
-          "all"
-        ],
-        "showOnOverlay": false,
-        "clickThrough": true
-      },
-      "positions": {
-        "HDMI-A-1": {
-          "width": 200,
-          "height": 200,
-          "x": 860,
-          "y": 440
-        }
-      }
-    }
-  ],
+  "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
