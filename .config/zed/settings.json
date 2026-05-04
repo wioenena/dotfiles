@@ -19,38 +19,27 @@
     "tree_view": true
   },
   "auto_install_extensions": {
-    "aquarium-theme": true,
     "biome": true,
-    "catppuccin": true,
     "deno": true,
     "discord-presence": true,
     "dockerfile": true,
     "elixir": true,
     "erlang": true,
     "git-firefly": true,
-    "kdl": true,
     "lua": true,
-    "macos-classic": true,
-    "min-theme": true,
     "nim": true,
     "nix": true,
-    "one-dark-pro": true,
     "prisma": true,
     "snazzy": true,
     "symbols": true,
-    "tokyo-night": true,
     "tombi": true,
-    "vscode-dark-modern": true,
     "vue": true,
     "zig": true,
-    "qml": true,
     "java": true,
-    "hyprlang": true,
     "make": true,
     "neocmake": true,
     "csharp": true,
     "sql": true,
-    "gruber-darker": true,
     "bearded-theme": true,
     "toml": true
   },
@@ -97,9 +86,14 @@
   "formatter": "language_server",
   "languages": {
     "TOML": {
-      "formatter": {
-        "language_server": {
-          "name": "tombi"
+      "show_edit_predictions": false
+    },
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
         }
       }
     }
