@@ -50,7 +50,8 @@
     "neocmake": true,
     "csharp": true,
     "sql": true,
-    "gruber-darker": true
+    "gruber-darker": true,
+    "bearded": true
   },
   "autosave": {
     "after_delay": {
@@ -77,7 +78,7 @@
     "show_close_button": "hidden",
     "show_diagnostics": "all",
   },
-  "theme": "Gruber Darker",
+  "theme": "Bearded Theme Classic Anthracite",
   "ui_font_size": 16.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
