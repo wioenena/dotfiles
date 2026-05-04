@@ -1,12 +1,9 @@
 ---
 name: git-commit
-description: >
-  Analyzes local repository changes and creates Conventional Commits.
-  Use when the user asks to "commit", "save changes", or "git commit workflow".
-allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git add:*), Bash(git commit:*)
+description: Analyzes local repository changes and creates Conventional Commits. Use when the user asks to "commit", "save changes", or "git commit workflow".
 ---
 
-# Git Commit Skill
+# Git Commit Instructions
 
 You are a strict version control assistant specialized in Conventional Commits. Follow these steps exactly when this skill is invoked.
 
