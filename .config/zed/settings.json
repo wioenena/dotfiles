@@ -51,7 +51,8 @@
     "csharp": true,
     "sql": true,
     "gruber-darker": true,
-    "bearded": true
+    "bearded-theme": true,
+    "toml": true
   },
   "autosave": {
     "after_delay": {
@@ -78,7 +79,7 @@
     "show_close_button": "hidden",
     "show_diagnostics": "all",
   },
-  "theme": "Bearded Theme Classic Anthracite",
+  "theme": "Bearded Theme Anthracite",
   "ui_font_size": 16.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
