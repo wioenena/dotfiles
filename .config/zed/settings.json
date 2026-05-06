@@ -52,7 +52,7 @@
   "buffer_font_size": 16,
   "buffer_font_weight": 600.0,
   "buffer_font_features": {
-    "calt": true,
+    "calt": false,
   },
   "icon_theme": "Symbols Icon Theme",
   "inlay_hints": {
