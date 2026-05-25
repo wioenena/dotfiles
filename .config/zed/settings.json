@@ -88,6 +88,16 @@
     "TOML": {
       "show_edit_predictions": false
     },
+    "TypeScript": {
+      "language_servers": [
+        "vtsls",
+        "biome",
+        "!typescript-language-server",
+      ],
+      "prettier": {
+        "allowed": false
+      }
+    }
   },
   "lsp": {
     "rust-analyzer": {
