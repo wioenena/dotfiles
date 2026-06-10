@@ -76,7 +76,7 @@
 			"calt": true
 		}
 	},
-	"vim_mode": true,
+	"vim_mode": false,
 	"format_on_save": "on",
 	"formatter": "language_server",
 	// Language settings
@@ -128,7 +128,7 @@
 		},
 		"rust-analyzer": {
 			"binary": { "path": "rust-analyzer" },
-			"settings": {
+			"initialization_options": {
 				"check": { "command": "clippy" }
 			}
 		}
