@@ -1,5 +1,5 @@
 {
-	"cli_default_open_behavior": "new_window",
+ "cli_default_open_behavior": "new_window",
 	"project_panel": {
 		"dock": "left"
 	},
@@ -76,7 +76,7 @@
 			"calt": true
 		}
 	},
-	"vim_mode": false,
+	"vim_mode": true,
 	"format_on_save": "on",
 	"formatter": "language_server",
 	// Language settings
