@@ -1,5 +1,5 @@
 {
- "cli_default_open_behavior": "new_window",
+	"cli_default_open_behavior": "new_window",
 	"project_panel": {
 		"dock": "left"
 	},
@@ -69,7 +69,7 @@
 		"show_diagnostics": "all"
 	},
 	"theme": "Bearded Theme Anthracite",
-	"ui_font_size": 16.0,
+	"ui_font_size": 18.0,
 	"terminal": {
 		"font_family": "JetBrainsMono Nerd Font",
 		"font_features": {
