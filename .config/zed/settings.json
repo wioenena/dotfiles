@@ -1,4 +1,5 @@
 {
+	"cursor_shape": "block",
 	"cli_default_open_behavior": "new_window",
 	"project_panel": {
 		"dock": "left"
@@ -49,7 +50,7 @@
 		}
 	},
 	"buffer_font_family": "JetBrains Mono",
-	"buffer_font_size": 16,
+	"buffer_font_size": 20,
 	"buffer_font_weight": 600.0,
 	"buffer_font_features": {
 		"calt": false
@@ -68,7 +69,7 @@
 		"show_close_button": "hidden",
 		"show_diagnostics": "all"
 	},
-	"theme": "Bearded Theme Anthracite",
+	"theme": "Ayu Dark",
 	"ui_font_size": 18.0,
 	"terminal": {
 		"font_family": "JetBrainsMono Nerd Font",
@@ -129,7 +130,13 @@
 		"rust-analyzer": {
 			"binary": { "path": "rust-analyzer" },
 			"initialization_options": {
-				"check": { "command": "clippy" }
+				"check": { "command": "clippy" },
+				"imports": {
+					"granularity": {
+						"group": "module"
+					},
+					"prefix": "self"
+				}
 			}
 		}
 	}
