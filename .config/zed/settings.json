@@ -42,7 +42,8 @@
 		"csharp": true,
 		"sql": true,
 		"bearded-theme": true,
-		"toml": true
+		"toml": true,
+		"oxc": true
 	},
 	"autosave": {
 		"after_delay": {
