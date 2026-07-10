@@ -15,5 +15,7 @@ vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.background = "dark"
 vim.opt.winborder = "rounded"
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:block,r-cr-o:hor20"
+
 vim.wo.relativenumber = false
 vim.wo.number = true
