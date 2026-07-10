@@ -68,7 +68,7 @@ If there is a **breaking change**: append `!` right after the type/scope (e.g. `
 
 - **Description**: imperative mood, lowercase start, no trailing period, short and specific (~50-72 characters target). E.g. `add rate limiting to auth middleware`.
 - **Body** (optional, recommended for non-trivial changes): focuses on "why" rather than "what", bullet points if useful. Separated from the description by a blank line.
-- **Footer** (optional): `BREAKING CHANGE: ...`, `Closes #123`, `Refs #456`, etc.
+- **Footer** (optional): `BREAKING CHANGE: ...`, `Closes #123`, `Refs #456`, etc. Do NOT add any Co-Authored-By, Generated with, or other AI-attribution trailers — see Hard Rule 5.
 - Always write the message in English — never switch to the conversation's language or the repository's existing commit language.
 - Present the message inside a code block so the user can copy it directly.
 
