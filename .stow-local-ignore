@@ -1,6 +1,7 @@
 .git
 .gitignore
-
-vscode/
 package.json
 pnpm-lock.yaml
+
+vscode/
+.husky/

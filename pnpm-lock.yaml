@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       oxfmt:
         specifier: ^0.58.0
         version: 0.58.0
@@ -136,6 +139,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   oxfmt@0.58.0:
     resolution: {integrity: sha512-8feG/7NVEHDVwc1OUpP6Pks+TnaDFUw2jLLFIMi5bcmmwxAX2wBQvjSzj62RRTYBf2Op1Wt8xbkmagmPTR5ETg==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -211,6 +219,8 @@ snapshots:
 
   '@oxfmt/binding-win32-x64-msvc@0.58.0':
     optional: true
+
+  husky@9.1.7: {}
 
   oxfmt@0.58.0:
     dependencies:

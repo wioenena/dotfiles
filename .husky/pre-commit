@@ -1,0 +1,9 @@
+files=$(git diff --cached --name-only --diff-filter=ACM -- \
+    '*.json' '*.yml' '*.yaml' '*.md' '*.MD' \
+    ':(exclude)package-lock.json' \
+    ':(exclude)pnpm-lock.yaml'
+)
+
+if [ -n "$files" ]; then 
+    echo "$files" | xargs pnpm oxfmt
+fi
