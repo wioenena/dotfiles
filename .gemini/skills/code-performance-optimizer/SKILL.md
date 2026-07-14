@@ -27,7 +27,7 @@ Given one or more source files, you will:
 2. **Run a performance analysis pass** — catalogue bottlenecks by category (see below).
 3. **Estimate impact** for each finding (High / Medium / Low).
 4. **Apply optimizations** with clear before/after explanations.
-5. **Add doc comments and inline annotations** explaining *why* each optimization was made.
+5. **Add doc comments and inline annotations** explaining _why_ each optimization was made.
 6. **Modernize syntax and APIs** to current language standards.
 
 ---
@@ -35,33 +35,39 @@ Given one or more source files, you will:
 ## Performance Analysis Categories
 
 ### 🔴 Algorithmic Complexity
+
 - O(n²) or worse where O(n log n) or O(n) is achievable
 - Linear search in loops when a set/map lookup would be O(1)
 - Repeated sorting of the same data
 - Recomputing values inside loops that could be hoisted
 
 ### 🟠 Data Structure Inefficiency
+
 - Using List/Array for membership checks → use Set/HashSet
 - Using string concatenation in loops → use StringBuilder / join / buffer
 - Rebuilding collections on every call
 - Unnecessary copying of large structures
 
 ### 🟡 Redundant Computation
+
 - Calling `.Count`, `.length`, `.size()` in every loop iteration
 - Repeated property/field access that could be cached in a local
 - Duplicate database or I/O calls within the same scope
 - Dead code, unused variables, unreachable branches
 
 ### 🟢 Memory & Allocation
+
 - Allocating inside hot loops (avoid GC pressure)
 - Keeping references alive longer than needed
 - Large object graphs that could be streamed or paged
 - Missing `using` / `defer` / RAII patterns causing resource leaks
 
 ### 🔵 Language-Specific Anti-Patterns
-*See the **Language-Specific Guidance** section below for exact patterns to avoid and enforce.*
+
+_See the **Language-Specific Guidance** section below for exact patterns to avoid and enforce._
 
 ### ⚪ Readability & Maintainability
+
 - Rename cryptic identifiers
 - Replace magic numbers with named constants
 - Add doc comments and explain non-obvious optimizations
@@ -72,7 +78,9 @@ Given one or more source files, you will:
 ## Step-by-Step Workflow
 
 ### Step 1 — Read and Identify
+
 Read each target file. Determine:
+
 - Language from extension + content
 - Runtime context (web server, CLI, batch job, library, game engine, etc.)
 - Entry points and hot paths (functions called in loops or on every request)
@@ -80,6 +88,7 @@ Read each target file. Determine:
 Log internally: `Detected: [LANGUAGE] | Context: [CONTEXT] | Entry points: [LIST]`
 
 ### Step 2 — Analysis Pass (do NOT edit yet)
+
 Scan the entire file and produce a structured catalogue formatted like this:
 
 ```text
@@ -102,6 +111,7 @@ MODERNIZATION FINDINGS
 Present this catalogue. For HIGH impact items that change algorithm logic, await confirmation before proceeding. For LOW/INFO items, proceed unless instructed otherwise.
 
 ### Step 3 — Apply Optimizations
+
 Apply all confirmed changes. For every non-trivial change, add an inline comment:
 
 ```csharp
@@ -111,11 +121,13 @@ Apply all confirmed changes. For every non-trivial change, add an inline comment
 ```
 
 Preserve:
+
 - Indentation and whitespace style
 - Public API signatures (unless breaking changes are explicitly allowed)
 - Existing comments (unless they describe code that was changed)
 
 ### Step 4 — Output
+
 Provide the optimized code blocks. Then provide a concise per-file summary covering algorithmic changes, data structure changes, memory improvements, and syntax modernizations applied.
 
 ---
@@ -123,6 +135,7 @@ Provide the optimized code blocks. Then provide a concise per-file summary cover
 ## Language-Specific Guidance
 
 ### Go
+
 - Enforce the use of the `any` keyword instead of `interface{}` for dynamic types across the entire project.
 - Prefer `sync.Pool` for frequently allocated short-lived objects.
 - Preallocate slices with `make([]T, 0, expectedLen)` to avoid repeated growth.
@@ -131,6 +144,7 @@ Provide the optimized code blocks. Then provide a concise per-file summary cover
 - Use `sync.RWMutex` when reads vastly outnumber writes.
 
 ### C# / .NET
+
 - `List<T>` → `HashSet<T>` for membership, `Dictionary<K,V>` for keyed lookup.
 - String concat in loop → `StringBuilder` or `string.Join`.
 - `async/await` over `.Result` / `.Wait()` (avoid deadlocks).
@@ -140,6 +154,7 @@ Provide the optimized code blocks. Then provide a concise per-file summary cover
 - EF Core: use `AsNoTracking()` for read-only queries, avoid N+1 with `.Include()`. Resolve any scope conflicts in result filters (e.g., `ApiResponseResultFilter`).
 
 ### Node.js / TypeScript / JavaScript
+
 - `Map` / `Set` over plain objects for frequent lookups/membership.
 - Avoid `Array.prototype.find/filter/map` chains inside loops (O(n²)).
 - `Promise.all()` for parallel async instead of sequential `await`.
@@ -147,6 +162,7 @@ Provide the optimized code blocks. Then provide a concise per-file summary cover
 - Use `const` over `let` where value doesn't change.
 
 ### Python
+
 - List comprehensions over `for` + `.append()`.
 - `set` / `dict` for membership / keyed lookup instead of `list`.
 - Generator expressions (`yield`) to avoid materializing large sequences.
@@ -154,6 +170,7 @@ Provide the optimized code blocks. Then provide a concise per-file summary cover
 - `functools.lru_cache` / `cache` for pure functions called repeatedly.
 
 ### Rust
+
 - Prefer iterators over manual index loops (enables LLVM optimizations).
 - Use `Vec::with_capacity()` when final size is known.
 - Avoid `.clone()` in hot paths — borrow or restructure ownership.
@@ -163,11 +180,11 @@ Provide the optimized code blocks. Then provide a concise per-file summary cover
 
 ## Impact Estimation Guide
 
-| Impact | Criteria |
-|--------|----------|
-| HIGH   | O(n²)→O(n) or O(n log n), removing repeated I/O, fixing N+1 queries, eliminating allocation in hot loops |
+| Impact | Criteria                                                                                                                |
+| ------ | ----------------------------------------------------------------------------------------------------------------------- |
+| HIGH   | O(n²)→O(n) or O(n log n), removing repeated I/O, fixing N+1 queries, eliminating allocation in hot loops                |
 | MEDIUM | Hoisting loop-invariant computation, replacing linear search with hash lookup for moderate n, removing redundant copies |
-| LOW    | Dead code removal, magic numbers, minor syntax modernization |
+| LOW    | Dead code removal, magic numbers, minor syntax modernization                                                            |
 
 ---
 

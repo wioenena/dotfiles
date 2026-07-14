@@ -5,11 +5,11 @@ description: >
   Improvements include: renaming cryptic identifiers (variables, functions, classes, parameters) to meaningful names,
   replacing generic exceptions/errors with specific typed ones and better messages, adding doc comments to functions
   and classes, and inserting inline comments for complex logic.
-  
+
   Use this skill whenever the user asks to modernize, clean up, improve readability, rename identifiers, add documentation,
   or make code more understandable — regardless of programming language. Also trigger when the user says things like
   "make my code better", "this code is messy", "add comments", "improve naming", or provides files to refactor.
-  
+
   IMPORTANT: This skill must NEVER change program logic, control flow, algorithms, or architecture. Only surface-level
   improvements: names, comments, exception types/messages.
 ---
@@ -43,9 +43,11 @@ Given one or more source files, you will:
 ## Step-by-Step Workflow
 
 ### Step 1 — Identify files and language
+
 Read each target file. Determine the language from the file extension, shebang, or content patterns. Log internally: `Detected language: [LANGUAGE] for [FILENAME]`
 
 ### Step 2 — Analysis pass (do NOT edit yet)
+
 Scan the file and build a concise catalogue of issues formatted like this:
 
 ```text
@@ -60,15 +62,19 @@ MISSING DOCS / COMPLEX LOGIC:
   - [line X] function `calculateTotal` — no doc comment
   - [lines A-B] bitwise mask operation — needs inline comment
 ```
+
 Present this catalogue. Ask for confirmation if any rename is ambiguous or might affect external APIs.
 
 ### Step 3 — Apply changes
+
 Apply all confirmed improvements. Preserve:
+
 - Indentation and whitespace style.
 - Existing comments (do not rewrite unless they are stale after a rename).
 - All logic exactly as-is.
 
 ### Step 4 — Output
+
 Provide the modernized code blocks. Then provide a concise change summary per file covering identifiers renamed, exceptions improved, and comments added.
 
 ---
@@ -78,28 +84,34 @@ Provide the modernized code blocks. Then provide a concise change summary per fi
 Use the idiomatic format for the detected language:
 
 ### Go
+
 - Use `godoc` format: `// FunctionName does X...`
 - **Modernization Rule:** Strictly enforce the use of the `any` keyword instead of `interface{}` for all dynamic types. Update legacy `interface{}` declarations to `any`.
 - Error messages: `errors.New("error")` → `fmt.Errorf("failed to parse: %w", err)`
 
 ### C# / .NET
+
 - Use XML doc comments (`/// <summary>...`).
 - Replace `Exception` with `ArgumentNullException`, `InvalidOperationException`, `KeyNotFoundException`, etc.
 - Double-check variable scopes after renaming to prevent shadowing or scope conflicts in LINQ/filters.
 
 ### TypeScript / JavaScript / Node.js
+
 - Use JSDoc block comments (`/** ... */`).
 - Replace generic `Error` with `TypeError`, `RangeError`, or custom error classes.
 
 ### Python
+
 - Use Google style docstrings (`""" ... """` with `Args:` and `Returns:`).
 - Replace `Exception` with `ValueError`, `TypeError`, `KeyError`, etc.
 
 ### Java / Kotlin
+
 - Use Javadoc (`/** ... */`).
 - Replace `Exception` / `RuntimeException` with `IllegalArgumentException`, `IllegalStateException`, etc.
 
 ### Rust
+
 - Use rustdoc (`/// ...`).
 - Only improve error/panic messages; do not convert panics to `Result` as that changes control flow.
 
@@ -107,8 +119,8 @@ Use the idiomatic format for the detected language:
 
 ## Identifier Renaming Heuristics
 
-- **Functions/Methods:** Describe what it *does* or *returns* (e.g., `calc()` → `calculateDiscount()`).
-- **Variables/Parameters:** Describe what it *holds* (e.g., `x` → `userAge`).
+- **Functions/Methods:** Describe what it _does_ or _returns_ (e.g., `calc()` → `calculateDiscount()`).
+- **Variables/Parameters:** Describe what it _holds_ (e.g., `x` → `userAge`).
 - **Classes:** Noun describing the entity (e.g., `Mgr` → `SessionManager`).
 - **Preserve Idioms:** Keep standard conventions (e.g., `i` in loops, `err` in Go).
 

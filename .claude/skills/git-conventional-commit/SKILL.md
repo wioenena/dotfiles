@@ -38,6 +38,7 @@ git diff --staged      # only staged changes
 ### 2. Analyze the Changes
 
 From the diff, determine:
+
 - **What changed** (new file, deleted file, logic change, formatting only, etc.)
 - **Why it changed** (infer from function/file names and code context where possible)
 - **Scope**: the affected module/package/directory (e.g. `api`, `auth`, `parser`, `riscord-gateway`). Leave the scope empty if the change affects the whole project.
@@ -46,19 +47,19 @@ From the diff, determine:
 
 Pick exactly one Conventional Commits type:
 
-| type | When to use |
-|---|---|
-| `feat` | A new feature was added |
-| `fix` | A bug fix |
-| `docs` | Documentation-only changes |
-| `style` | Formatting changes that don't affect behavior (whitespace, semicolons, etc.) |
-| `refactor` | Code restructuring that is neither a bug fix nor a feature |
-| `perf` | A performance improvement |
-| `test` | Adding or fixing tests |
-| `build` | Changes to the build system or dependencies (npm, cargo, csproj, go.mod, etc.) |
-| `ci` | CI configuration/file changes |
-| `chore` | Other maintenance work (doesn't modify src or test files) |
-| `revert` | Reverts a previous commit |
+| type       | When to use                                                                    |
+| ---------- | ------------------------------------------------------------------------------ |
+| `feat`     | A new feature was added                                                        |
+| `fix`      | A bug fix                                                                      |
+| `docs`     | Documentation-only changes                                                     |
+| `style`    | Formatting changes that don't affect behavior (whitespace, semicolons, etc.)   |
+| `refactor` | Code restructuring that is neither a bug fix nor a feature                     |
+| `perf`     | A performance improvement                                                      |
+| `test`     | Adding or fixing tests                                                         |
+| `build`    | Changes to the build system or dependencies (npm, cargo, csproj, go.mod, etc.) |
+| `ci`       | CI configuration/file changes                                                  |
+| `chore`    | Other maintenance work (doesn't modify src or test files)                      |
+| `revert`   | Reverts a previous commit                                                      |
 
 If multiple types seem to apply, pick the most dominant/important change as the type, and explain the rest in the body if needed.
 
@@ -75,6 +76,7 @@ If there is a **breaking change**: append `!` right after the type/scope (e.g. `
 ### 5. Present and Confirm
 
 Show the generated message and ask:
+
 - Does the message look right, or should it be adjusted?
 - Should this message be used to create a local commit now (`git commit -m "..."`)?
 

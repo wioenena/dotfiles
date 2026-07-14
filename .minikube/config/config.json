@@ -1,6 +1,6 @@
 {
-    "cni": "calico",
-    "container-runtime": "cri-o",
-    "driver": "podman",
-    "rootless": true
+  "cni": "calico",
+  "container-runtime": "cri-o",
+  "driver": "podman",
+  "rootless": true
 }

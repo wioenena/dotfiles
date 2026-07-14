@@ -2,3 +2,5 @@
 .gitignore
 
 vscode/
+package.json
+pnpm-lock.yaml

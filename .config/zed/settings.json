@@ -186,7 +186,7 @@
       }
     },
     "clangd": {
-      "binary":{
+      "binary": {
         "arguments": ["--header-insertion=never"]
       }
     }
