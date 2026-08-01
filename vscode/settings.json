@@ -2,6 +2,7 @@
   "security.allowedUNCHosts": ["wsl.localhost"],
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
+  "window.zoomLevel": 0,
   "editor.formatOnSave": true,
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
@@ -19,19 +20,18 @@
   "editor.guides.bracketPairs": "active",
   "editor.linkedEditing": true,
   "editor.semanticTokenColorCustomizations": {
-    "enabled": true
+    "enabled": true,
   },
   "editor.unicodeHighlight.allowedLocales": {
     "_os": true,
     "_vscode": true,
-    "tr": true
+    "tr": true,
   },
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.activityBar.location": "top",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
   "workbench.list.smoothScrolling": true,
-  "window.zoomLevel": 1,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.smoothScrolling": true,
@@ -43,7 +43,7 @@
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
-    ".env": "*.env, .env.local, .env.dev*, .env.prod*, .env.test*, .env.stag*, .env.example"
+    ".env": "*.env, .env.local, .env.dev*, .env.prod*, .env.test*, .env.stag*, .env.example",
   },
   "vim.disableExtension": false,
   "zig.zls.enabled": "on",
@@ -58,7 +58,7 @@
     "https://schema.tauri.app": true,
     "https://schemastore.azurewebsites.net/": true,
     "https://ui.shadcn.com": true,
-    "https://www.schemastore.org/": true
+    "https://www.schemastore.org/": true,
   },
   "js/ts.preferences.importModuleSpecifier": "non-relative",
   "rust-analyzer.imports.prefix": "self",
@@ -66,11 +66,11 @@
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "[typescript][javascript][typescriptreact][javascriptreact][vue][json][jsonc]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "editor.renderWhitespace": "all",
   "claudeCode.preferredLocation": "panel",
   "chat.mcp.discovery.enabled": {
     "claude-desktop": true
-  }
+  },
 }
