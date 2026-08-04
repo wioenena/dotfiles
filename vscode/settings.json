@@ -2,7 +2,7 @@
   "security.allowedUNCHosts": ["wsl.localhost"],
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 0.75,
   "editor.formatOnSave": true,
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
