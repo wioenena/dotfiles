@@ -27,6 +27,12 @@
     "_vscode": true,
     "tr": true
   },
+  "editor.renderWhitespace": "all",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": "off",
+    "strings": "off"
+  },
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.activityBar.location": "top",
   "workbench.productIconTheme": "fluent-icons",
@@ -68,7 +74,6 @@
   "[typescript][javascript][typescriptreact][javascriptreact][vue][json][jsonc]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  "editor.renderWhitespace": "all",
   "claudeCode.preferredLocation": "panel",
   "chat.mcp.discovery.enabled": {
     "claude-desktop": true
