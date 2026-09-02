@@ -182,6 +182,9 @@
             "group": "module"
           },
           "prefix": "self"
+        },
+        "inlayHints": {
+          "closingBraceHints": { "enabled": false }
         }
       }
     },
