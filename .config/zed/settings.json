@@ -66,10 +66,10 @@
     "close_position": "right",
     "file_icons": true,
     "git_status": true,
-    "show_close_button": "hidden",
+    "show_close_button": "hover",
     "show_diagnostics": "all"
   },
-  "theme": "Ayu Dark",
+  "theme": "Bearded Theme Monokai Black",
   "ui_font_size": 18.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
