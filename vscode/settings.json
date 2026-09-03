@@ -33,6 +33,7 @@
     "comments": "off",
     "strings": "off"
   },
+  "workbench.colorTheme": "Bearded Theme feat. Will",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.activityBar.location": "top",
   "workbench.productIconTheme": "fluent-icons",
