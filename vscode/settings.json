@@ -1,6 +1,6 @@
 {
   "security.allowedUNCHosts": ["wsl.localhost"],
-  "window.zoomLevel": 0.75,
+  "window.zoomLevel": 1,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
   "editor.formatOnSave": true,
