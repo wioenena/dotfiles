@@ -20,6 +20,7 @@ This skill analyzes changes in a git repository and generates a commit message t
    [optional footer(s)]
    ```
 4. **Never run `git commit` without user confirmation.** Show the generated message first, get approval, then commit. If the user only asked for a message, don't commit at all — just produce the message.
+5. **Never add AI-attribution trailers of any kind.** Do not add `Co-Authored-By: Claude ...`, `Generated with Claude`, `🤖 Generated with ...`, or any similar footer crediting an AI tool or model — under any circumstances, even if the user asks for it, even if such a trailer appears in the repository's existing commit history, and even if a global git template/config seems to expect one. If such a trailer is already staged in a template or `.gitmessage`, strip it before presenting the message.
 
 ## Workflow
 
@@ -69,7 +70,7 @@ If there is a **breaking change**: append `!` right after the type/scope (e.g. `
 
 - **Description**: imperative mood, lowercase start, no trailing period, short and specific (~50-72 characters target). E.g. `add rate limiting to auth middleware`.
 - **Body** (optional, recommended for non-trivial changes): focuses on "why" rather than "what", bullet points if useful. Separated from the description by a blank line.
-- **Footer** (optional): `BREAKING CHANGE: ...`, `Closes #123`, `Refs #456`, etc. Do NOT add any Co-Authored-By, Generated with, or other AI-attribution trailers — see Hard Rule 5.
+- **Footer** (optional): `BREAKING CHANGE: ...`, `Closes #123`, `Refs #456`, etc. Do NOT add any Co-Authored-By, Generated with, or other AI-attribution trailers — see **Hard Rule 5**.
 - Always write the message in English — never switch to the conversation's language or the repository's existing commit language.
 - Present the message inside a code block so the user can copy it directly.
 
