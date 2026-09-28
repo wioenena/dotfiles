@@ -1,4 +1,7 @@
 {
+  "cursor_animation": {
+    "enabled": true
+  },
   "cursor_shape": "bar",
   "cli_default_open_behavior": "new_window",
   "project_panel": {
@@ -69,7 +72,7 @@
     "show_close_button": "hover",
     "show_diagnostics": "all"
   },
-  "theme": "Bearded Theme Monokai Black",
+  "theme": "Bearded Theme Arc Blueberry",
   "ui_font_size": 18.0,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
