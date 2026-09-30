@@ -1,4 +1,5 @@
 {
+  "restore_on_startup": "launchpad",
   "cursor_animation": {
     "enabled": true
   },
@@ -53,7 +54,7 @@
     }
   },
   "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 20,
+  "buffer_font_size": 16,
   "buffer_font_weight": 600.0,
   "buffer_font_features": {
     "calt": false
