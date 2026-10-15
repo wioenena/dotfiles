@@ -5,7 +5,7 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
   "editor.formatOnSave": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "500",
@@ -42,6 +42,7 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.smoothScrolling": true,
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -80,7 +81,16 @@
   },
   "debug.allowBreakpointsEverywhere": true,
   "cSpell.userWords": ["wioenena"],
-  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "Dark Modern",
   "claudeCode.hideOnboarding": true,
-  "remote.autoForwardPortsSource": "hybrid"
+  "remote.autoForwardPortsSource": "hybrid",
+  "window.density.layout": "compact",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  }
 }
