@@ -6,4 +6,5 @@ files=$(git diff --cached --name-only --diff-filter=ACM -- \
 
 if [ -n "$files" ]; then 
     echo "$files" | xargs pnpm oxfmt
+    echo "$files" | xargs git add
 fi
